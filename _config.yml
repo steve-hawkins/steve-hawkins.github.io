@@ -1,4 +1,10 @@
+title: Waste is a thief
+author: Steven Hawkins
+email: "steven.hawkins84@gmail.com"
+description: >-
+  My thoughts and findings on sustainable software product innovations.
 theme: minima
-title: "Waste is a thief"
-author: "Steven Hawkins"
-description: "My thoughts and findings on sustainable software product innovations."
+minima:
+  skin: dark
+  social_links:
+    - { platform: github, user_url: "https://github.com/steve-hawkins"}
