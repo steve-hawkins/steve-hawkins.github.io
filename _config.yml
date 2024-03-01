@@ -1,10 +1,15 @@
+github: [metadata]
+
 title: Waste is a thief
 author: Steven Hawkins
 email: "steven.hawkins84@gmail.com"
 description: >-
   My thoughts and findings on sustainable software product innovations.
-theme: minima
+plugins:
+  - jekyll-remote-theme
+  - jekyll-youtube
+remote_theme: jekyll/minima
 minima:
-  skin: dark
+  skin: auto
   social_links:
     - { platform: github, user_url: "https://github.com/steve-hawkins"}
