@@ -2,7 +2,6 @@
 layout: post
 title: "SME Regional Lottery"
 date: 2024-02-13
-youtubeId: vJVj6fM1GJw
 ---
 
 # Welcome

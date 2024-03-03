@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-# gem "jekyll", "~> 4.2"
-# if using github-page uncomment the line below and comment the line above
 gem "github-pages", group: :jekyll_plugins
 
 git "https://github.com/jekyll/minima", branch: "2.5-stable" do

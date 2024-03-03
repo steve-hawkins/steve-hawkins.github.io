@@ -46,7 +46,6 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           source: ./docs
-          destination: ./_site
       # - name: Build with Jekyll
       #   working-directory: ./docs
       #   # Outputs to the './_site' directory by default
@@ -56,8 +55,6 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
 
   # Deployment job
   deploy:
