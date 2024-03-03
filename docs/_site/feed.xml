@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-03T12:21:01+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Waste is a thief</title><subtitle>My thoughts and findings on sustainable software product innovations.</subtitle><author><name>Steven Hawkins</name></author><entry><title type="html">SME Regional Lottery</title><link href="http://localhost:4000/2024/02/13/SME-Regional-Lottery.html" rel="alternate" type="text/html" title="SME Regional Lottery" /><published>2024-02-13T00:00:00+00:00</published><updated>2024-02-13T00:00:00+00:00</updated><id>http://localhost:4000/2024/02/13/SME-Regional-Lottery</id><content type="html" xml:base="http://localhost:4000/2024/02/13/SME-Regional-Lottery.html"><![CDATA[<h1 id="welcome">Welcome</h1>
+
+<p>According to (cite) over 50% of the UK carbon emissions are currently from small to medium enterprises.  However, the average SME produces around 15 mtCO2e annually with a few factors that can greatly impact this number like sector, location, size and how efficient the SME is with the energy they consume.  Today I will be discussing the location factor and how this is a bit of a lottery on SME emissions.</p>
+
+<p>I have had the recent opportunity to meet the great people of ice breaker one project Perseus and hope to get more involved as part of the technical advisory board.  I could try and write about what the intent of Project Perseus is, but they have spent the time and effort on a fantastic video.</p>
+
+<p>jekyll-youtube plugin:</p>
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container">    <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/vJVj6fM1GJw" frameborder="0" allowfullscreen=""></iframe></div>
+
+<p>or with no plugin:</p>
+
+<div class="embed-container">
+  <iframe src="https://www.youtube.com/embed/vJVj6fM1GJw" width="700" height="480" frameborder="0" allowfullscreen="true">
+  </iframe>
+</div>]]></content><author><name>Steven Hawkins</name></author><summary type="html"><![CDATA[Welcome]]></summary></entry></feed>
