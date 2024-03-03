@@ -1,11 +1,17 @@
 title: Waste is a thief
 repository: steve-hawkins/waste-is-a-thief
-author: Steven Hawkins
+author: Steve Hawkins
 email: "steven.hawkins84@gmail.com"
 description: >-
   My thoughts and findings on sustainable software product innovations.
 baseurl: ""
 url: "https://steve-hawkins.github.io"
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      author: "Steve Hawkins"
 plugins:
   - jekyll-remote-theme
   - jekyll-youtube
@@ -14,3 +20,4 @@ minima:
   skin: auto
   social_links:
     - { platform: github, user_url: "https://github.com/steve-hawkins"}
+    - { platform: linkedin, user_url: "https://linkedin.com/in/steve--hawkins"}
