@@ -4,6 +4,8 @@ author: Steven Hawkins
 email: "steven.hawkins84@gmail.com"
 description: >-
   My thoughts and findings on sustainable software product innovations.
+baseurl: ""
+url: "https://steve-hawkins.github.io"
 plugins:
   - jekyll-remote-theme
   - jekyll-youtube
