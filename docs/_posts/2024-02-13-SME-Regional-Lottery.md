@@ -14,7 +14,3 @@ I have had the recent opportunity to meet the great people of ice breaker one pr
 jekyll-youtube plugin:
 
 {% youtube "https://www.youtube.com/watch?v=vJVj6fM1GJw" %}
-
-or with no plugin:
-
-{% include youtubePlayer.html id=page.youtubeId %}
