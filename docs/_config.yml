@@ -1,11 +1,11 @@
-title: Waste is a thief
+title: waste is a thief
 repository: steve-hawkins/waste-is-a-thief
 author: Steve Hawkins
 email: "steven.hawkins84@gmail.com"
 description: >-
-  My thoughts and findings on sustainable software product innovations.
+  A personal blog with my thoughts and findings on sustainable software product innovations.
 baseurl: ""
-url: "https://steve-hawkins.github.io"
+url: "https://blog.wiat.io"
 defaults:
   -
     scope:
