@@ -25,3 +25,11 @@ To compound this e-waste issue there is also an unexpectedly large carbon footpr
 So what is the solution?  Reduce waste, only use what is necessary to do the job well, that's it, nothing else, anything else is excessive...
 
 Now this is just a simple blog, but I want to see how far I can take a few of these concepts into bigger and more complex software products.
+
+### The Device
+
+I purchased a two year old Google Pixelbook Go off eBay for under £200 that still has updates until 2029, this feels quite the opposite to a normal developers device, a ChromeOS browser based device...  ChromeOS devices are great for general personal, school and work related activities, but could it be used for software development?
+
+### Code
+
+I went for GitHub...  I still need to look into the environmental impact of alternative options here, but the fact I could store the code in a GitHub repository, develop with GitHub Codespaces (more on this later), build with GitHub Actions and host the blog on GitHub Pages made it an compelling choice.
