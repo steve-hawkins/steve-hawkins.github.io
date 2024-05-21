@@ -2,12 +2,13 @@
 layout: post
 title: "low impact software products"
 date: 2024-05-21
+tags: green_software vscode devcontainer github github_actions github_pages github_codespaces jekyll website_carbon_calculator
 ---
 
 > [!WARNING]
 > If you are not familiar with the environmental impact of software products like websites, applications and SaaS platforms then you might want to start with my post on [how does software create emissions?]({% post_url 2024-05-21-how-does-software-create-emissions %})
 
-## Part 1 - Software Engineers Devices
+## a practical example
 
 It wouldn't be polite for me to write this blog about sustainable software products and share it with the world on a solution that had a high impact on the environment now would it.
 
@@ -24,12 +25,54 @@ To compound this e-waste issue there is also an unexpectedly large carbon footpr
 
 So what is the solution?  Reduce waste, only use what is necessary to do the job well, that's it, nothing else, anything else is excessive...
 
-Now this is just a simple blog, but I want to see how far I can take a few of these concepts into bigger and more complex software products.
+Now this is just a simple blog, but I want to see how far I can take a few of these concepts into bigger and more complex software products another day.  For now let's dive into how I created [wiat.io](https://wiat.io/).
 
-### The Device
+### my device of choice
 
-I purchased a two year old Google Pixelbook Go off eBay for under £200 that still has updates until 2029, this feels quite the opposite to a normal developers device, a ChromeOS browser based device...  ChromeOS devices are great for general personal, school and work related activities, but could it be used for software development?
+I purchased a two year old Google Pixelbook Go off eBay for under £200 that will continue to receive updates until 2029.  This feels quite the opposite to a normal developers device, a ChromeOS browser based device...
 
-### Code
+ChromeOS devices are generally speaking (especially Google built) lower impact devices to create and operate in terms of energy consumption, they are great for general personal, school and work related activities, but could it be used for software development?
 
-I went for GitHub...  I still need to look into the environmental impact of alternative options here, but the fact I could store the code in a GitHub repository, develop with GitHub Codespaces (more on this later), build with GitHub Actions and host the blog on GitHub Pages made it an compelling choice.
+I started off by enabling developer mode and going about installing Visual Studio Code on the local Debian container, Microsoft provide a pretty good guide on their [vscode site](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started).
+
+All good so far and vscode feels like it does on any other device.
+
+### code storage, application build and hosting
+
+I went for GitHub as they, and Microsoft their parent company, have [robust environmental sustainability commitments](https://github.blog/2021-04-22-environmental-sustainability-github/).  I still need to look into the alternatives in terms of environmental impact in more detail, but the fact I could store the code in a GitHub repository, develop with [GitHub Codespaces](https://github.com/features/codespaces) (more on this later), build with GitHub Actions and host the blog on [GitHub Pages](https://pages.github.com/) made it an compelling choice.
+
+Now let's work our way backwards through those choices.
+
+#### GitHub Pages
+
+GitHub Pages allows for free and simple hosting of static websites and they also work with a Ruby based static site generator called [Jekyll](https://jekyllrb.com/).  Jekyll is somewhat limited when running on GitHub Pages due to [supported versions](https://pages.github.com/versions/) and for security reasons most custom plugins are blocked.
+
+Jekyll is a bit of a learning curve, but the docs and examples out there are easy enough to follow, you just have to be careful with what does and does not work with Jekyll on GitHub Pages.
+
+The biggest issue for me was Ruby...  I haven't done much development with Ruby since my pre-2018 [Puppet](https://www.puppet.com/) days and one thing I remember was the pain Ruby version management was having to use something like RVM and polluting your local machine with multiple versions for all the different projects you were working on at the same time.
+
+This is where [vscode Dev Containers](https://code.visualstudio.com/docs/devcontainers/tutorial) came into save the day!
+
+A Dev Container allows you to have a consistent, contained and collaborative toolchain.
+
+This is looking up, but it still means that you need to install Docker (can be a bit of a resource hog) locally and on ChromeOS that needs a little more work.
+
+#### GitHub Codespaces
+
+Taking the Dev Container approach a step further, if you have the .devcontainer file stored in your GitHub repository you can then create a GitHub Codespaces virtual machine and connect to it from your local vscode.  This enables you to develop on an entirely different architecture from your local device, even have a much more powerful device that you only use when you need it during development rather than having all that power / energy consumption all of the time.
+
+You could go a step even further by connecting to the GitHub Codespaces virtual machines vscode directly in the browser removing the need to have vscode or anything installed locally at all and on ChromeOS that means you wouldn't even need to enable developer mode.
+
+What is even better is that GitHub Codespaces virtual machines are free for 120 core hours per-month.
+
+#### GitHub Actions
+
+Great, we have low cost and carbon hosting and development environment, but we also need to build and publish the software.  GitHub Actions allow you to specify and create the build and deployment steps in code along with your .devcontainer and blog code.
+
+Quick simple and again free.
+
+### the results
+
+I used the [Website Carbon Calculator](https://www.websitecarbon.com/) and the blog is in the best carbon rating possible:
+
+![wiat.io carbon]({{site.baseurl}}/assets/wiat-io-carbon.png)
