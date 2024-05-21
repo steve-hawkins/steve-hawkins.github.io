@@ -15,6 +15,8 @@ defaults:
 plugins:
   - jekyll-remote-theme
   - jekyll-youtube
+header_pages:
+  - about.md
 remote_theme: jekyll/minima
 minima:
   skin: auto
