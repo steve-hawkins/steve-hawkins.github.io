@@ -39,7 +39,7 @@ All good so far and vscode feels like it does on any other device.
 
 ### code storage, application build and hosting
 
-I went for GitHub as they, and Microsoft their parent company, have [robust environmental sustainability commitments](https://github.blog/2021-04-22-environmental-sustainability-github/).  I still need to look into the alternatives in terms of environmental impact in more detail, but the fact I could store the code in a GitHub repository, develop with [GitHub Codespaces](https://github.com/features/codespaces) (more on this later), build with GitHub Actions and host the blog on [GitHub Pages](https://pages.github.com/) made it an compelling choice.
+I went for GitHub as they, and Microsoft their parent company, have [robust environmental sustainability commitments](https://github.blog/2021-04-22-environmental-sustainability-github/).  I still need to look into the alternatives in terms of environmental impact in more detail, but the fact I could store the code in a GitHub repository, develop with [GitHub Codespaces](https://github.com/features/codespaces) (more on this later), build with [GitHub Actions](https://github.com/features/actions) and host the blog on [GitHub Pages](https://pages.github.com/) made it an compelling choice.
 
 Now let's work our way backwards through those choices.
 
@@ -49,9 +49,9 @@ GitHub Pages allows for free and simple hosting of static websites and they also
 
 Jekyll is a bit of a learning curve, but the docs and examples out there are easy enough to follow, you just have to be careful with what does and does not work with Jekyll on GitHub Pages.
 
-The biggest issue for me was Ruby...  I haven't done much development with Ruby since my pre-2018 [Puppet](https://www.puppet.com/) days and one thing I remember was the pain Ruby version management was having to use something like RVM and polluting your local machine with multiple versions for all the different projects you were working on at the same time.
+The biggest issue for me was Ruby...  I haven't done much development with Ruby since my pre-2018 [Puppet](https://www.puppet.com/) days and one thing I remember was the pain Ruby version management was, having to use something like [RVM](https://rvm.io/) polluting your local machine with multiple versions for all the different projects you were working on at the time.
 
-This is where [vscode Dev Containers](https://code.visualstudio.com/docs/devcontainers/tutorial) came into save the day!
+This is where [vscode Dev Containers](https://code.visualstudio.com/docs/devcontainers/tutorial) came in to save the day!
 
 A Dev Container allows you to have a consistent, contained and collaborative toolchain.
 
@@ -59,20 +59,42 @@ This is looking up, but it still means that you need to install Docker (can be a
 
 #### GitHub Codespaces
 
-Taking the Dev Container approach a step further, if you have the .devcontainer file stored in your GitHub repository you can then create a GitHub Codespaces virtual machine and connect to it from your local vscode.  This enables you to develop on an entirely different architecture from your local device, even have a much more powerful device that you only use when you need it during development rather than having all that power / energy consumption all of the time.
+Taking the Dev Container approach a step further, if you have the .devcontainer file stored in your GitHub repository you can then create a GitHub Codespaces virtual machine and connect to it from your local vscode.  This enables you to develop on an entirely different architecture from your local device, even have a much more powerful remote device that you only use when you need it during development rather than having all that power / energy consumption all of the time.
 
-You could go a step even further by connecting to the GitHub Codespaces virtual machines vscode directly in the browser removing the need to have vscode or anything installed locally at all and on ChromeOS that means you wouldn't even need to enable developer mode.
+You could go a step further by connecting to the GitHub Codespaces virtual machines vscode directly in the browser, removing the need to have vscode or anything installed locally at all and on ChromeOS that means you wouldn't even need to enable developer mode (improves security and resource consumption).
 
 What is even better is that GitHub Codespaces virtual machines are free for 120 core hours per-month.
 
 #### GitHub Actions
 
-Great, we have low cost and carbon hosting and development environment, but we also need to build and publish the software.  GitHub Actions allow you to specify and create the build and deployment steps in code along with your .devcontainer and blog code.
+Great, we have low cost and carbon hosting and development environment, but we also need to build and publish the software.  GitHub Actions allows you to specify and create the build and deployment steps in code along with your dev container and application code.
 
-Quick simple and again free.
+Quick, simple and again free.
+
+#### network transmission emissions
+
+A growing area of concern is the amount of energy required to power network devices and servers that make up the internet.  The BBC have covered this quite well in one of their Future articles [why your internet habits are not as clean as you think](https://www.bbc.com/future/article/20200305-why-your-internet-habits-are-not-as-clean-as-you-think).
+
+By having code storage, virtual development machines, application build, deployment and hosting all from the same provider (GitHub) there is a hope that they are within the same ecosystem (one would assume Azure?) and the network hops required would be minimal and going out via the public internet as little as possible.
 
 ### the results
+
+Through the practical example of this very blog we have looked at several areas of software products where environmental consideration can be measured and actions to manage them can be made:
+
+- Developer devices
+  - Environmental impact of hardware creation and transportation
+  - Local software resource utilisation
+  - Energy consumption whilst in use
+  - Disposal when redundant / broken
+- Code storage, build and deployment
+  - Energy consumption from network transmission
+- software hosting
+  - Energy consumption from processing and network transmission
+
+I have only really scratched the surface in terms of details, but I hope it gives people food for thought when they get back to working on an existing or starting a new software product.
 
 I used the [Website Carbon Calculator](https://www.websitecarbon.com/) and the blog is in the best carbon rating possible:
 
 ![wiat.io carbon]({{site.baseurl}}/assets/wiat-io-carbon.png)
+
+If you have a website I would encourage you to add the Website Carbon Calculator badge as I have here in the footer to help raise awareness of the emissions from everyday browsing.
