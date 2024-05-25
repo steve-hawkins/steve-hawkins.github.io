@@ -97,4 +97,6 @@ I used the [Website Carbon Calculator](https://www.websitecarbon.com/) and the b
 
 ![wiat.io carbon]({{site.baseurl}}/assets/wiat-io-carbon.png)
 
+In comparison [medium](https://medium.com/)  articles I have tested range in the B to C rating with an average of 0.47 gCO2e.
+
 If you have a website I would encourage you to add the Website Carbon Calculator badge as I have here in the footer to help raise awareness of the emissions from everyday browsing.
