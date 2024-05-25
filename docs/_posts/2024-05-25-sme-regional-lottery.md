@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "SME regional lottery"
-date: 2024-08-21
-tags: grid carbon energy
+date: 2024-05-25
+tags: grid carbon energy Perseus carbon_intensity
 ---
 
 ## carbon reporting needs equity not equality
@@ -21,6 +21,8 @@ So how does this impact SME carbon emissions reporting?  It means that an SME in
 
 This difference is due to many factors, but put simply the electricity generation, transmission and storage is more or less carbon intense.
 
+There is talk about SMEs using a national blended rate for gCO2e.  I believe it is correct to report these numbers for the SME based on their actual regions gCO2e otherwise we lose the motivation to make localised improvements.  When it comes to things like transition funding we can then make sure it is spent on the right things for the right people in the right places.  Equity to give everyone what they actually need to make a difference rather than equality and potentially water down action.
+
 So what can the government, SMEs and individuals do about levelling the playing field?
 
 Encourage the development of more localised renewal energy generation, grid infrastructure and energy storage systems.
@@ -28,6 +30,8 @@ Encourage the development of more localised renewal energy generation, grid infr
 Local councils have too much power and with very few votes are able to block legitimate, sensibly planned and safe solutions.
 
 This has to change and education is required to highlight how much they are costing and harming their local businesses and people.
+
+### easier and more accurate reporting
 
 I have had the recent opportunity to meet the great people of Icebreaker One project [Perseus](https://icebreakerone.org/perseus/) who are looking to make SME carbon reporting more accurate and as easy as a click of a button.  I am looking forward to getting more involved as part of the technical advisory board.
 
