@@ -8,7 +8,7 @@ There is a .devcontainer file in the repository and I recommend using [GitHub Co
 
 This is a [Jekyll](https://jekyllrb.com/) blog hosted on [GitHub Pages](https://pages.github.com/).
 
-Once in vscode make your desired changes and in the terminal run `cd docs/` the one of the following to build the site locally:
+Once in vscode make your desired changes and in the terminal run `cd docs/` and then `bundle install` and one of the following to build the site locally:
 
 - `bundle exec jekyll serve` to build as is
 - `bundle exec jekyll serve --drafts` to build and show draft posts
