@@ -12,7 +12,7 @@ Once in vscode make your desired changes and in the terminal run `cd docs/` the 
 
 - `bundle exec jekyll serve` to build as is
 - `bundle exec jekyll serve --drafts` to build and show draft posts
-- `bundle exec jekyll serve --drafts --future` to build and show draft and future dated posts
+- `bundle exec jekyll serve --future` to build and show future dated posts
 
 This will have created a live editing site to browse as you create articles.
 

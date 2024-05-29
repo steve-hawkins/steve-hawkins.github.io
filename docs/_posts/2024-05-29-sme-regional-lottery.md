@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "the regional lottery for SME emissions"
-date: 2024-05-25
+date: 2024-05-29
 tags: grid carbon energy Perseus carbon_intensity
 ---
 
